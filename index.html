@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header id="home">
+        <!-- navbar -->
+        <nav id="nav">
+            <div class="nav-center">
+                <!-- nav header -->
+                <div class="nav-header">
+                    <img src="https://cdn.glitch.com/7c4173a0-f85f-4cad-9af1-ae917d53ff71%2Fpremier-league-logo-png-transparent.png?v=1621515104617"
+                        class="logo" alt="logo" />
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- links -->
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-link">home</a>
+                        </li>
+                        <li>
+                            <a href="#teams" class="scroll-link">Teams</a>
+                        </li>
+                        <li>
+                            <a href="#table" class="scroll-link">Table</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <div class="banner">
+            <div class="container">
+                <h1>Premiere League</h1>
+                <p>
+                    This is current standings of the 2020/2021 Premiere League Season, Manchester City has claimed the
+                    title and continues to do so for the
+                    fourth time in a row!.
+                </p>
+                <a href="#teams" class="scroll-link btn btn-white">explore Players</a>
+            </div>
+        </div>
+    </header>
+    <!-- teams -->
+    <section id="teams" class="section">
+        <div class="title">
+            <h2>Team<span> Players</span></h2>
+        </div>
+    </section>
+
+<div id="slider">
+    <figure>
+        <img src="/images/Manchester City-Images/Ederson.png" alt="">
+        <img src="/images/Manchester City-Images/Diaz.png" alt="">
+        <img src="/images/Manchester City-Images/Laporte.png" alt="">
+        <img src="/images/Manchester City-Images/Walker.png" alt="">
+        <img src="/images/Manchester City-Images/De Bruyne.png" alt="">
+    </figure>
+</div>
+
+<!-- <div id="slider2">
+    <figure>
+        <img src="/images/Liverpool Players/Allison.png" alt="">
+        <img src="/images/Liverpool Players/Van dijk.png" alt="">
+        <img src="/images/Liverpool Players/Salah.png" alt="">
+        <img src="/images/Liverpool Players/Wijnaldum.png" alt="">
+        <img src="/images/Liverpool Players/Allison.png" alt="">
+    </figure>
+</div> -->
+
+
+    <!-- table -->
+    <section id="table" class="section">
+        <div class="title">
+            <h2>League<span> Standings</span></h2>
+        </div>
+    </section>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th onclick="sortColumn('pg')">PG</th>
+                <th onclick="sortColumn('w')">W</th>
+                <th onclick="sortColumn('l')">L</th>
+                <th onclick="sortColumn('d')">D</th>
+                <th onclick="sortColumn('points')">Points</th>
+            </tr>
+        </thead>
+        <tbody id="tableData"></tbody>
+    </table>
+
+
+    <!-- footer -->
+    <footer class="section">
+        <p>
+            &copy; Premiere League
+            <span id="date"></span> Season!
+        </p>
+    </footer>
+    <a class="scroll-link top-link" href="#home">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script src="/script.js" defer></script>
+</body>
+
+</html>
